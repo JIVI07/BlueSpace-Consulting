@@ -1,0 +1,598 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Blue Space Consulting
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <script src="https://cdn.emailjs.com/dist/email.min.js">
+  </script>
+   <style>
+    .glow {
+      text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000, 0 0 60px #000, 0 0 70px #000;
+    }
+  </style>
+<style>
+    @keyframes glowing {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+  
+  <script>
+   (function(){
+      emailjs.init("infobluespaceconsulting@gmail.com");
+    })();
+  </script>
+ </head>
+ <body class="font-roboto">
+  <!-- Header -->
+  <header class="bg-blue-900 text-white">
+   <div class="container mx-auto flex justify-between items-center py-4 px-6">
+    <div class="text-2xl font-bold">
+     Blue Space Consulting
+    </div>
+    <nav class="space-x-4 hidden md:flex">
+     <a class="hover:text-gray-300" href="#home">
+      Home
+     </a>
+     <a class="hover:text-gray-300" href="#about">
+      About Us
+     </a>
+     <a class="hover:text-gray-300" href="#services">
+      Services
+     </a>
+     <a class="hover:text-gray-300" href="#blog">
+      Blog
+     </a>
+     <a class="hover:text-gray-300" href="#contact">
+      Contact
+     </a>
+    </nav>
+    
+    <div class="md:hidden">
+     <button class="text-white focus:outline-none" id="menu-btn">
+      <i class="fas fa-bars text-2xl">
+      </i>
+     </button>
+    </div>
+   </div>
+   <nav class="hidden md:hidden bg-blue-900 text-white space-y-4 px-6 py-4" id="mobile-menu">
+    <a class="block hover:text-gray-300" href="#home">
+     Home
+    </a>
+    <a class="block hover:text-gray-300" href="#about">
+     About Us
+    </a>
+    <a class="block hover:text-gray-300" href="#services">
+     Services
+    </a>
+    <a class="block hover:text-gray-300" href="#blog">
+     Blog
+    </a>
+    <a class="block hover:text-gray-300" href="#contact">
+     Contact
+    </a>
+   </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="relative" id="home">
+   <img alt="A futuristic office space with blue lighting and modern furniture" class="w-full h-96 object-cover" height="600" src="Photo/banner.jpg" width="1920"/>
+   <div class="absolute inset-0 bg-blue-900 bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-4">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">
+     Innovative Solutions for Your Business
+    </h1>
+    <p class="text-lg md:text-2xl mb-6">
+     We help you navigate the digital landscape
+    </p>
+    <a class="bg-white text-blue-900 px-6 py-3 rounded-full text-lg font-semibold" href="https://www.linkedin.com/in/bluespace-ai-ai-automation-agency-93715127b/">
+     Get Started
+    </a>
+   </div>
+  </section>
+  <!-- About Us Section -->
+  <section class="py-12 bg-gray-100" id="about">
+   <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-8">
+     About Us
+    </h2>
+    <div class="flex flex-col md:flex-row items-center">
+     <img alt="Team of professionals working together in a modern office" class="w-full md:w-1/2 rounded-lg shadow-lg mb-6 md:mb-0 md:mr-6" height="300" src="Photo/logo.jpg" width="500"/>
+     <div class="md:w-1/2">
+      <p class="text-lg mb-4">
+        Where innovation meets intelligence, we specialize in delivering AI-powered solutions to transform businesses in the digital age. Our expertise spans AI website development, creating dynamic and intuitive websites optimized for performance, and AI agents that enhance customer service and streamline operations with adaptive virtual assistants. We also craft AI avatars—lifelike digital personas that elevate brand interactions—and drive brand promotion through AI-driven marketing strategies, particularly for LinkedIn growth.
+</p>
+<p class="text-lg">
+        With over 650 projects completed, more than three years of experience, and a track record of 50+ happy clients backed by numerous customer reviews, we have established ourselves as a trusted leader in AI solutions. Our latest advancements include the launch of AI-driven marketing strategies in January 2025 to revolutionize LinkedIn growth, delivering a record 50+ customized AI solutions in December 2024, and earning recognition in November 2024 as an industry leader in AI website development and brand promotion.
+      </p>
+      <p class="text-lg">
+        Empowering businesses with future-ready AI technologies, we are your partner in innovation and success. Together, let's redefine the future with intelligent, cutting-edge solutions.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  
+  <!-- Services Section -->
+  <section id="services" class="py-12">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <a href="Translate.html" target="_blank">
+                    <i class="fas fa-globe text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">World Speak</h3>
+                    <p class="text-lg">
+                        AI chatbot enabling real-time multilingual conversations, translating text and speech instantly for businesses, travelers, and global teams to communicate seamlessly.
+                    </p>
+                </a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <a href="https://www.chatbase.co/chatbot-iframe/9Ruk-eYmlp4pfF5-YpUXA" target="_blank">
+                    <i class="fas fa-user-cog text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">Personalized Recommendation</h3>
+                    <p class="text-lg">
+                        AI assistant analyzing user behavior, preferences, and past interactions to provide tailored product, content, and service recommendations for a highly personalized experience.
+                    </p>
+                </a>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <a href="https://www.chatbase.co/chatbot-iframe/om1MbqjtW0cevZiURxrfD" target="_blank">
+                    <i class="fas fa-robot text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">Bluespace AI</h3>
+                    <p class="text-lg">
+                        Advanced AI system providing real-time perception and decision-making capabilities for autonomous vehicles, robotics, and industrial automation, enhancing efficiency and safety.
+                    </p>
+                </a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <a href="lead generation.html" target="_blank">
+                    <i class="fas fa-user-plus text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">Lead Generation</h3>
+                    <p class="text-lg">
+                        AI-driven chatbot capturing potential leads by engaging visitors, qualifying prospects through intelligent conversation, and integrating with CRM tools for optimized sales conversion.
+                    </p>
+                </a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <a href="https://shoppingassistants-34884.chipp.ai" target="_blank">
+                    <i class="fas fa-shopping-cart text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">Shopping Assistant</h3>
+                    <p class="text-lg">
+                        AI-powered virtual assistant helping customers discover products, compare prices, check availability, and receive tailored recommendations, improving their online shopping journey.
+                    </p>
+                </a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <a href="https://returnsrefundagents-35770.chipp.ai/w/chat" target="_blank">
+                    <i class="fas fa-undo text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">Return and Refund Agent</h3>
+                    <p class="text-lg">
+                        AI chatbot automating the return and refund process by handling customer queries, verifying requests, and providing instant resolution, reducing wait times and improving satisfaction.
+                    </p>
+                </a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <a href="https://hrrecruitment-35773.chipp.ai/w/chat" target="_blank">
+                    <i class="fas fa-user-tie text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">HR and Recruitment</h3>
+                    <p class="text-lg">
+                        AI-powered HR assistant streamlining recruitment by screening applications, shortlisting candidates, scheduling interviews, and automating follow-ups to improve hiring efficiency.
+                    </p>
+                </a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <a href="https://onboardingassistants-35779.chipp.ai" target="_blank">
+                    <i class="fas fa-user-check text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">Onboarding Assistant</h3>
+                    <p class="text-lg">
+                        AI chatbot guiding new employees through company policies, training modules, and paperwork, ensuring a structured and engaging onboarding experience with minimal manual effort.
+                    </p>
+                </a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <a href="https://financeaccounting-35781.chipp.ai" target="_blank">
+                    <i class="fas fa-coins text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">Finance Assistant</h3>
+                    <p class="text-lg">
+                        AI-driven financial assistant providing real-time expense tracking, budget insights, automated report generation, and financial planning support for businesses and individuals.
+                    </p>
+                </a>
+            </div>
+            <style>
+              .golden-glow {
+                  box-shadow: 0 0 20px 5px rgba(255, 215, 0, 0.6);
+              }
+              .golden-color {
+                  background-color: #FFD700;
+              }
+          </style>
+
+            <div class="golden-color p-6 rounded-lg shadow-lg text-center golden-glow">
+              <a href="https://optimizer2.odoo.com/" target="_blank">
+                  <i class="fas fa-file-alt text-4xl text-blue-900 mb-4"></i>
+                  <h3 class="text-2xl font-bold mb-4">Resume Builder</h3>
+                  <p class="text-lg">
+                      Allows users to create, edit, and customize resumes online. Provides various templates tailored for different job roles. Features an interactive modal for editing resume details like name, summary, skills, experience, and education. Includes a contact form and navigation options for a smooth user experience.
+                  </p>
+              </a>
+          </div>
+          <div class="golden-color p-6 rounded-lg shadow-lg text-center golden-glow">
+              <a href="https://optilink.odoo.com/our-services" target="_blank">
+                  <i class="fab fa-linkedin text-4xl text-blue-900 mb-4"></i>
+                  <h3 class="text-2xl font-bold mb-4">Optilink</h3>
+                  <p class="text-lg">
+                      Helps users analyze and improve their LinkedIn profiles. Provides AI-powered feedback on profile optimization, including keyword analysis. Displays profile ranking scores and suggests improvements in profile picture, work experience, and skills endorsements. Includes a feature to upload LinkedIn profiles or PDFs for evaluation. Has an integrated email contact form for user inquiries.
+                  </p>
+              </a>
+          </div>
+          <div class="golden-color p-6 rounded-lg shadow-lg text-center golden-glow">
+            <a href="index.html " target="_blank">
+                <div class="avatar">🤖</div>
+                <h3 class="text-2xl font-bold mb-4">Multitasking AI </h3>
+                <p class="text-lg">
+                    Multitasking AI is revolutionizing how we interact with technology by performing multiple complex tasks simultaneously. Unlike traditional AI models that specialize in a single function, multitasking AI can process diverse inputs, analyze vast datasets, and generate context-aware responses across multiple domains.
+
+Key advancements in multitasking AI include:
+
+Parallel Processing: Handling multiple queries at once, improving efficiency.
+Context Awareness: Understanding and retaining contextual information across different tasks.
+Adaptive Learning: Evolving based on interactions to enhance problem-solving capabilities.
+From virtual assistants managing schedules to AI-driven automation in industries, multitasking AI is paving the way for a more seamless, intelligent future.
+                </p>
+            </a>
+        </div>
+      </div>
+  </div>
+</section>
+
+  <!-- About the Founder Section -->
+  <section class="py-12 bg-gray-100">
+    <div class="container mx-auto px-6">
+     <h2 class="text-3xl font-bold text-center mb-8">
+      About the Founder
+     </h2>
+     <div class="flex flex-col md:flex-row items-center">
+      <img alt="Portrait of the founder of Blue Space Consulting, a confident and professional individual" class="w-full md:w-1/3 rounded-lg shadow-lg mb-6 md:mb-0 md:mr-6" height="300" src="Photo/mam.jpg" width="300"/>
+      <div class="md:w-2/3">
+       <p class="text-lg mb-4">
+        CA Jaya Sharma is a distinguished Chartered Accountant with over nine years of expertise in financial management, process optimization, and data-driven decision-making. As a trusted financial advisor, she specializes in P2P (Procure-to-Pay) processes, ensuring seamless vendor payments, compliance, and cost efficiency. Her proficiency extends to employee payables, where she has streamlined payroll processes, improved accuracy, and ensured strict adherence to statutory regulations. In taxation, Jaya crafts strategic solutions that optimize tax liabilities while maintaining full compliance with legal standards, making her an invaluable partner for businesses navigating complex tax landscapes.
+       </p>
+       <p class="text-lg mb-4">
+        A strong advocate for technology-driven financial management, Jaya is proficient in Power BI, transforming raw financial data into meaningful visualizations and actionable insights. Her ability to present data in an accessible format empowers organizations to monitor key performance indicators, identify growth opportunities, and make well-informed decisions. Known for her precision, integrity, and innovative approach, Jaya consistently delivers measurable results, driving operational efficiency and business success. 
+       </p>
+       <p class="text-lg">
+        Whether managing daily financial challenges or contributing to long-term strategic planning, she remains committed to enhancing financial performance and fostering sustainable
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+ <!-- Blog Section -->
+ <section class="py-12 bg-white" id="blog">
+    <div class="container mx-auto px-6">
+   
+     <h2 class="text-3xl font-bold text-center mb-8">
+      Blogs
+     </h2>
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+       <a href="https://openai.com/research/" target="_blank">
+        <img alt="OpenAI logo with a futuristic design" class="w-full h-48 object-cover rounded-lg mb-4" height="400" src="Photo/openai.jpg" width="600"/>
+        <h3 class="text-2xl font-bold mb-4">
+         OpenAI Blog
+        </h3>
+        <p class="text-lg mb-2">
+         Covers advancements in AI, including ChatGPT and DALL-E.
+        </p>
+        <p class="text-lg mb-4">
+         <strong>
+          Uses:
+         </strong>
+         Learn about AI models, ethics, and OpenAI research.
+        </p>
+        <p class="text-lg mb-4">
+         <strong>
+          How to Use:
+         </strong>
+         Read articles for AI insights, explore research papers, and stay updated on new releases.
+        </p>
+       </a>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+       <a href="https://machinelearningmastery.com/" target="_blank">
+        <img alt="Machine Learning Mastery logo with a clean and modern design" class="w-full h-48 object-cover rounded-lg mb-4" height="400" src="Photo/bb.jpg" width="600"/>
+        <h3 class="text-2xl font-bold mb-4">
+         Machine Learning Mastery
+        </h3>
+        <p class="text-lg mb-2">
+         Practical ML and AI tutorials by Jason Brownlee.
+        </p>
+        <p class="text-lg mb-4">
+         <strong>
+          Uses:
+         </strong>
+         Learn ML with step-by-step guides and code examples.
+        </p>
+        <p class="text-lg mb-4">
+         <strong>
+          How to Use:
+         </strong>
+         Follow tutorials, practice coding exercises, and apply ML concepts in real projects.
+        </p>
+       </a>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+       <a href="https://bair.berkeley.edu/blog/" target="_blank">
+        <img alt="BAIR logo with a professional and academic design" class="w-full h-48 object-cover rounded-lg mb-4" height="400" src="Photo/bb.jpg" width="600"/>
+        <h3 class="text-2xl font-bold mb-4">
+         BAIR Blog
+        </h3>
+        <p class="text-lg mb-2">
+         AI research insights from Berkeley AI Research Lab.
+        </p>
+        <p class="text-lg mb-4">
+         <strong>
+          Uses:
+         </strong>
+         Get expert AI research updates and breakthroughs.
+        </p>
+        <p class="text-lg mb-4">
+         <strong>
+          How to Use:
+         </strong>
+         Read research summaries, follow AI trends, and explore new methodologies.
+        </p>
+       </a>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+       <a href="https://www.deepmind.com/blog" target="_blank">
+        <img alt="DeepMind logo with a futuristic and innovative design" class="w-full h-48 object-cover rounded-lg mb-4" height="400" src="Photo/dm.jpg" width="600"/>
+        <h3 class="text-2xl font-bold mb-4">
+         DeepMind Blog
+        </h3>
+        <p class="text-lg mb-2">
+         Cutting-edge AI research, including AlphaFold and Deep Learning.
+        </p>
+        <p class="text-lg mb-4">
+         <strong>
+          Uses:
+         </strong>
+         Learn about AI applications in science, gaming, and healthcare.
+        </p>
+        <p class="text-lg mb-4">
+         <strong>
+          How to Use:
+         </strong>
+         Explore case studies, watch research videos, and understand AI advancements.
+        </p>
+       </a>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+       <a href="https://ai.googleblog.com/" target="_blank">
+        <img alt="Google AI logo with a clean and modern design" class="w-full h-48 object-cover rounded-lg mb-4" height="400" src="Photo/gai.jpg" width="600"/>
+        <h3 class="text-2xl font-bold mb-4">
+         Google AI Blog
+        </h3>
+        <p class="text-lg mb-2">
+         Google's AI innovations and research updates.
+        </p>
+        <p class="text-lg mb-4">
+         <strong>
+          Uses:
+         </strong>
+         Stay updated on Google's AI projects and tools.
+        </p>
+        <p class="text-lg mb-4">
+         <strong>
+          How to Use:
+         </strong>
+         Read about AI applications, experiment with Google AI tools, and follow open-source projects.
+        </p>
+       </a>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+       <a href="https://www.marktechpost.com/" target="_blank">
+        <img alt="MarkTechPost logo with a simple and informative design" class="w-full h-48 object-cover rounded-lg mb-4" height="400" src="Photo/MTP.jpg" width="600"/>
+        <h3 class="text-2xl font-bold mb-4">
+         MarkTechPost
+        </h3>
+        <p class="text-lg mb-2">
+         AI and ML research highlights in an easy-to-read format.
+        </p>
+        <p class="text-lg mb-4">
+         <strong>
+          Uses:
+         </strong>
+         Understand AI research without deep technical knowledge.
+        </p>
+        <p class="text-lg mb-4">
+         <strong>
+          How to Use:
+         </strong>
+         Browse AI summaries, read key takeaways, and stay updated on trending topics.
+        </p>
+       </a>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+       <a href="https://news.mit.edu/topic/artificial-intelligence2" target="_blank">
+        <img alt="MIT News logo with a professional and academic design" class="w-full h-48 object-cover rounded-lg mb-4" height="400" src="Photo/MIT.jpg" width="600"/>
+        <h3 class="text-2xl font-bold mb-4">
+         MIT News – Artificial Intelligence
+        </h3>
+        <p class="text-lg mb-2">
+         AI research from MIT experts.
+        </p>
+        <p class="text-lg mb-4">
+         <strong>
+          Uses:
+         </strong>
+         Gain insights into academic AI research and breakthroughs.
+        </p>
+        <p class="text-lg mb-4">
+         <strong>
+          How to Use:
+         </strong>
+         Read AI news articles, explore research findings, and track AI advancements.
+        </p>
+       </a>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+       <a href="https://aws.amazon.com/blogs/machine-learning/" target="_blank">
+        <img alt="AWS Machine Learning logo with a clean and modern design" class="w-full h-48 object-cover rounded-lg mb-4" height="400" src="Photo/aws.jpg" width="600"/>
+        <h3 class="text-2xl font-bold mb-4">
+         AWS Machine Learning Blog
+        </h3>
+        <p class="text-lg mb-2">
+         Insights on AI and ML using AWS services.
+        </p>
+        <p class="text-lg mb-4">
+         <strong>
+          Uses:
+         </strong>
+         Learn how to deploy AI models on AWS cloud.
+        </p>
+        <p class="text-lg mb-4">
+         <strong>
+          How to Use:
+         </strong>
+         Follow AWS ML tutorials, learn best practices, and implement AI in cloud computing.
+        </p>
+       </a>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+       <a href="https://blogs.nvidia.com/" target="_blank">
+        <img alt="NVIDIA logo with a futuristic and innovative design" class="w-full h-48 object-cover rounded-lg mb-4" height="400" src="Photo/Nvdia.jpg" width="600"/>
+        <h3 class="text-2xl font-bold mb-4">
+         NVIDIA Blog
+        </h3>
+        <p class="text-lg mb-2">
+         AI, deep learning, and GPU-powered innovations.
+        </p>
+        <p class="text-lg mb-4">
+         <strong>
+          Uses:
+         </strong>
+         Discover AI applications in gaming, robotics, and automation.
+        </p>
+        <p class="text-lg mb-4">
+         <strong>
+          How to Use:
+         </strong>
+         Read AI case studies, explore NVIDIA tools, and learn about GPU-based AI research.
+        </p>
+       </a>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+       <a href="https://www.lesswrong.com/" target="_blank">
+        <img alt="LessWrong logo with a simple and informative design" class="w-full h-48 object-cover rounded-lg mb-4" height="400" src="Photo/less wrong.jpg" width="600"/>
+        <h3 class="text-2xl font-bold mb-4">
+         LessWrong
+        </h3>
+        <p class="text-lg mb-2">
+         Discussions on AI, philosophy, and rationality.
+        </p>
+        <p class="text-lg mb-4">
+         <strong>
+          Uses:
+         </strong>
+         Explore AI ethics, rational thinking, and decision-making.
+        </p>
+        <p class="text-lg mb-4">
+         <strong>
+          How to Use:
+         </strong>
+         Join discussions, read AI-related essays, and improve logical reasoning.
+        </p>
+       </a>
+      </div>
+     </div>
+    </div>
+   </section>
+  <!-- Contact Section -->
+  <section class="py-12 bg-gray-100" id="contact">
+   <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-8">
+     Contact Us
+    </h2>
+    <div class="flex flex-col md:flex-row items-center">
+     <div class="md:w-1/2 mb-6 md:mb-0 md:mr-6">
+      <h3 class="text-2xl font-bold mb-4">
+       Get in Touch
+      </h3>
+      <p class="text-lg mb-4">
+       We'd love to hear from you! Whether you have a question about our services or need assistance, our team is here to help.
+      </p>
+      <p class="text-lg">
+       <i class="fas fa-phone-alt mr-2">
+       </i>
+       +91 07522670617
+      </p>
+      <p class="text-lg">
+       <i class="fas fa-envelope mr-2">
+       </i>
+       infobluespaceconsulting@gmail.com 
+      </p>
+     </div>
+     <form class="md:w-1/2 bg-white p-6 rounded-lg shadow-lg w-full" id="contact-form">
+      <div class="mb-4">
+       <label class="block text-lg font-semibold mb-2" for="name">
+        Name
+       </label>
+       <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900" id="name" required="" type="text"/>
+      </div>
+      <div class="mb-4">
+       <label class="block text-lg font-semibold mb-2" for="email">
+        Email
+       </label>
+       <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900" id="email" required="" type="email"/>
+      </div>
+      <div class="mb-4">
+       <label class="block text-lg font-semibold mb-2" for="message">
+        Message
+       </label>
+       <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900" id="message" required="" rows="4"></textarea>
+      </div>
+      <button class="bg-blue-900 text-white px-6 py-3 rounded-full text-lg font-semibold w-full" type="submit">
+       Send Message
+      </button>
+     </form>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-6">
+   <div class="container mx-auto px-6 text-center">
+    <p>
+     © 2023 Blue Space Consulting. All rights reserved.
+    </p>
+   </div>
+  </footer>
+  <script>
+   document.getElementById('menu-btn').addEventListener('click', function () {
+     var menu = document.getElementById('mobile-menu');
+     if (menu.classList.contains('hidden')) {
+       menu.classList.remove('hidden');
+     } else {
+       menu.classList.add('hidden');
+     }
+   });
+
+   document.getElementById('contact-form').addEventListener('submit', function(event) {
+     event.preventDefault();
+     emailjs.sendForm('infobluespaceconsulting@gmail.com ', 'YOUR_TEMPLATE_ID', this)
+       .then(function() {
+         alert('Message sent successfully!');
+       }, function(error) {
+         alert('Failed to send message. Please try again later.');
+       });
+   });
+  </script>
+ </body>
+</html>
